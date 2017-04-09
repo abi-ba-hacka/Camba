@@ -1,0 +1,347 @@
+*{
+  border: 2px solid transparent;
+}
+article{
+  border: none;
+}
+
+span{
+  font-size: 20px;
+}
+
+main{
+  max-width: 320px;
+  max-height: 500px;
+  /*border: 1px solid black;*/
+}
+
+#body *{
+  border: none;
+}
+#body {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+#body::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .4; 
+  z-index: -1;
+  background: url(../images/Patagonia-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.before_loggin{
+  height: 70vh;
+}
+
+.icon-cart{
+  font-size: 25px;  
+  cursor: pointer;
+}
+.badge-notify{
+  background: #e7251e;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+.notificacion-item{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.no-paddings{
+  padding-left: 0;
+  padding-right: 0;
+}
+.col1-menu{
+  min-width: 63px !important;
+}
+.col3-menu{
+  width: 45px !important;
+}
+
+#logo-main{
+  margin-top: 40px;
+  width: 100%;
+}
+h1{
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navigation-bar{
+    padding-top: 5px;
+    /*border: 1px solid black;
+    border-radius: 5px 5px 0 0;*/
+}
+
+
+.main-first{
+  height: 75vh;
+  text-align: center;
+}
+
+footer{
+  height: 10vh;
+}
+
+
+
+.btn-main {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  /*border: 1px solid black;*/
+  border-radius: 6px;
+  height: 120px;
+  max-height: 150px;
+
+  background: rgba(0,0,0,.5);
+  opacity: 1;
+  transition: background .25s ease-in-out;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+#button-serving div:first-child{
+  padding-right: 5px;
+}
+#button-serving div:last-child{
+  padding-left: 10px;
+}
+
+#button-serving div:first-child section article{    
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#button-serving div:last-child section article{
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.btn-main:hover {
+    background: rgba(0,0,0,.8);
+}
+
+#pay-methods img{
+   height: 5vw;
+}
+
+.payMethods{
+  text-align: left;
+}
+
+#pay-methods .col-xs-12{
+  line-height: 30px;
+  border-bottom: 1px solid #222222;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#pay-methods .col-xs-12:hover{
+  background: #999999;
+}
+
+
+#pay-methods .col-xs-12:nth-child(2){
+  background: #a0bed1;
+}
+#pay-methods .col-xs-12:nth-child(2):hover{
+  background: #7d97a8;
+}
+.selected-method{
+  position: absolute;
+  right: 5px;
+  font-size: 22px;
+  top: 5px;
+}
+
+hr{
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h3{
+  line-height: 0.9;
+}
+
+.input{
+  width: 45%;
+  display: inline-block;
+}
+.input2{
+  width: 50px;
+  display: inline-block;
+}
+
+.beer{
+  margin: 0 auto;
+  height: 200px;
+  cursor: pointer;
+}
+
+.item{
+  height: 280px;
+}
+
+.selectBeer{
+  position: absolute;
+  width: 80%;
+  background-color: #cbb620;
+  opacity: 1;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 10%;
+  color: #ffffff;
+  bottom: 5px;
+}
+#moreInfo{
+   font-size: 30px;
+   position: absolute;
+   top: -20px;
+   right: 25px;
+   color: black;
+   opacity: 1;
+   cursor: pointer;
+}
+.carousel-indicators{
+  display: none;
+}
+
+.carousel-indicators li{
+  border: 2px solid #444444;
+}
+
+.carousel-control.left {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,123456+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #123456 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffffff 0%,#123456 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffffff 0%,#123456 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#123456',GradientType=1 ); /* IE6-9 */
+  background-repeat: no-repeat;
+}
+.carousel-control.right {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#123456+0,ffffff+100 */
+  background: #123456; /* Old browsers */
+  background: -moz-linear-gradient(left, #123456 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #123456 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #123456 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123456', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+  background-repeat: no-repeat;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none;
+  background-repeat: no-repeat;
+  font-size: 35px;
+  color: black;
+}
+
+.carousel-control.left span, .carousel-control.right span{
+  font-size: 35px;
+  color: black;
+}
+
+
+#chossed-beer img{
+   height: 13vw;
+}
+#chossed-beer label{
+   font-size: 20px;
+}
+
+.payMethods{
+  text-align: left;
+}
+
+#chossed-beer .col-xs-12{
+  line-height: 30px;
+  border-bottom: none;
+}
+.select-beer{
+  display: inline-block;
+  width: 50px;
+}
+.select-month{
+  display: inline-block;
+  width: 60px;
+}
+.select-year{
+  display: inline-block;
+  width: 80px;
+}
+
+
+
+
+
+
+
+
+
+.primerafila{
+  background-color: #00FF00;
+  height: 50px;
+}
+
+
+.segundafila{
+}
+
+.col_2_a{
+  background-color: red;
+  height: 80px
+}
+
+.col_2_b{
+  background-color: purple;
+  height: 20px
+}
+
+.col_2_c{
+  background-color: rgb(255,153,85);
+  height: 30px;
+}
+.col_2_d{
+  background-color: blue;
+  height: 40px;
+}
+
+
+.tercerafila{
+  background-color: #00FF00;
+  height: 20px;
+}
