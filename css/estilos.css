@@ -196,6 +196,7 @@ footer{
   border-bottom: 1px solid #222222;
   cursor: pointer;
   cursor: hand;
+  background-color: rgba(228, 224, 224, 0.31);   
 }
 
 #pay-methods .col-xs-12:hover{
@@ -345,11 +346,13 @@ h3{
 
 }
 #list-beer img{
-   height: 12vw;
+   height: 14vw;
+   float:left;
 }
 #list-beer label{
    font-size: 18px;
    color: black;
+
 }
 #list-beer label:nth-child(2){
   width: 69vw;
@@ -364,6 +367,25 @@ h3{
   font-size: 26px;
   top: 10px;
    color: black;
+}
+
+#list-beer #stars-likes span{  
+  position: initial;
+  font-size: 26px;
+  top: 10px;
+  color: black;
+}
+#list-beer #stars-likes span.glyphicon-star{ 
+  color: #f0f023; 
+}
+#list-beer #stars-likes span.glyphicon-star:hover{ 
+  color: #ff0;
+}
+#list-beer #stars-likes span.glyphicon-star-empty{  
+  color: #6e6e6e;
+}
+
+#list-beer #stars-likes{ 
 }
 
 #pay-processed div{

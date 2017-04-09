@@ -14,7 +14,7 @@
   <main>
 
 <div id="" class="container-fluid">
-  <nav>
+ <nav>
     <div class="row navigation-bar">
       <div class="col-xs-3 no-paddings col1-menu">
           <div class="dropdown">
@@ -50,7 +50,6 @@
     </nav>
   </div>
 
-       
  <section class="payMethods">
     <div class="row">
       <div class="col-xs-12 before_loggin">
@@ -58,28 +57,54 @@
           <a href="chooseBeer.html">
             <span class="glyphicon glyphicon-menu-left"></span>
           </a>
-          <label>Pale Ale</label>
+          <label>Lo que me Gusta</label>
           </h3>
         <hr>
 
-
-        <div class="row" id="details-beer" >
+        <div class="row" id="list-beer" >
 
           <div class="col-xs-12">
               <img src="images/cervezas/paleAle.png">
-              <strong>Apariencia:</strong> Color bronce claro, con espuma blanca cremosa, de claridad brillante.<br>
-              <strong>Aroma:</strong> Cítrico y leve herbal del lúpulo Mapuche.<br>
-              <strong>Sabor:</strong> Amargo suave con notas leves a caramelo de la malta.<br>
-              <strong>Generalidades:</strong>Tiene una combinación de maltas especiales y  una fermentación a altas temperaturas, que da lugar a una cerveza de color dorado bronce brillante de leve amargor y cuerpo medio.
+              <label>Pale Ale</label>
+              <label id="stars-likes">
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star-empty"></span> 
+              </label>
+              <span class=" glyphicon glyphicon-remove-circle selected-method"></span>
+          </div>
+
+          <div class="col-xs-12">
+              <img src="images/cervezas/ambreLarge.png">
+              <label>Amber Large</label>
+              <label id="stars-likes">
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star-empty"></span> 
+                 <span class="glyphicon glyphicon-star-empty"></span> 
+              </label>
+              <span class=" glyphicon glyphicon-remove-circle selected-method"></span>
+          </div>
+
+          <div class="col-xs-12">
+              <img src="images/cervezas/bohemianPilsener.png">
+              <label>Bohemian Pilsener</label>
+              <label id="stars-likes">
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star"></span> 
+                 <span class="glyphicon glyphicon-star-empty"></span> 
+                 <span class="glyphicon glyphicon-star-empty"></span> 
+                 <span class="glyphicon glyphicon-star-empty"></span> 
+              </label>
+              <span class=" glyphicon glyphicon-remove-circle selected-method"></span>
           </div>
 
           
 
-          <article class="col-xs-12 text-center">
-            <button class="btn btn-primary" id="orderNow" onclick="window.location.href='choosedBeer.html';">Elegir</button>
-          </article>
-
-       </div>
+        </div>
 
 
       </div>
@@ -102,13 +127,11 @@
 </main>
 
 
-  <footer style="display: none">
+  <footer>
     <div class="row">
-      <div class="col-xs-12 ">
-        <span class="glyphicon glyphicon-bell notificacion-item">
-          <span class="badge badge-notify">2</span>
+      <div class="col-xs-12 text-center">
 
-        </span>
+
       </div>
     </div>
   </footer>
@@ -122,15 +145,6 @@
   <script>
 
     $(document).ready(function(){
-      $('#quantityItem').change(function(){
-        $('#totalPrice').val($('#quantityItem').val()*90);
-      });
-    /*$('#orderNow').click(function(){
-        window.location.href='payProcessed.html';
-      });
-      $('#toCart').click(function(){
-        window.location.href='buyCart.html';
-      });*/
      //('#myCarousel').carousel();
      /*$("#myCarousel").swiperight(function() {
         $(this).carousel('prev');
