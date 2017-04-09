@@ -23,10 +23,10 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="main.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              <li><a href="chooseBeer.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
               &nbsp;|&nbsp;Inicio</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              &nbsp;|&nbsp;Maestro cervecero</a></li>
+              <!--<li><a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              &nbsp;|&nbsp;Maestro cervecero</a></li>-->
               <li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
               &nbsp;|&nbsp;Lo que me gusta</a></li>
               <li><a href="payMethods.html"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
@@ -39,40 +39,55 @@
       </div>
 
       <div class="col-xs-7 no-paddings">
-  <h1>Patagonia's GO</h1>
+  <h1></h1>
       </div>
-
+      
       <div class="col-xs-3 no-paddings col3-menu">
-        <span class="glyphicon glyphicon-shopping-cart icon-cart" onclick="window.location.href='buyCart.html'">
-          <span class="badge badge-notify">2</span>
+        <span class="glyphicon glyphicon-shopping-cart btn btn-default icon-cart" onclick="window.location.href='buyCart.html'">
+          <span class="badge badge-notify" style="display:none">2</span>
         </span>
       </div>
-
     </nav>
   </div>
 
-  <section class="main-first">
+       
+ <section class="payMethods">
     <div class="row">
       <div class="col-xs-12 before_loggin">
-        <h3>¡Hola Juan!</h3>
-        <h4>Bienvenido al refugio Paraguay</h4>
+        <h3>
+          <a href="chooseBeer.html">
+            <span class="glyphicon glyphicon-menu-left"></span>
+          </a>
+          <label>Pale Ale</label>
+          </h3>
+        <hr>
 
-        <br>
 
-        <div id="button-serving" class="row">
-          <div class="col-xs-6" style="display: none">
-            <section class="btn-main">
-              <article>Haceté un Maestro Cervecero</article>
-
-            </section>
-          </div>
+        <div class="row" id="details-beer" >
 
           <div class="col-xs-12">
-            <section onclick="window.location.href='chooseBeer.html';"" class="btn-main">
-              <article class="">Pedí tu Cerveza</articlea>
-            </section>
+              <img src="images/cervezas/paleAle.png">
+              <strong>Apariencia:</strong> Color bronce claro, con espuma blanca cremosa, de claridad brillante.<br>
+              <strong>Aroma:</strong> Cítrico y leve herbal del lúpulo Mapuche.<br>
+              <strong>Sabor:</strong> Amargo suave con notas leves a caramelo de la malta.<br>
+              <strong>Generalidades:</strong>Tiene una combinación de maltas especiales y  una fermentación a altas temperaturas, que da lugar a una cerveza de color dorado bronce brillante de leve amargor y cuerpo medio.
           </div>
-        </div>
+
+          
+
+          <article class="col-xs-12 text-center">
+            <button class="btn btn-primary" id="orderNow" onclick="window.location.href='choosedBeer.html';">Elegir</button>
+          </article>
+
+       </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
 
       </div>
     </div>
@@ -87,7 +102,7 @@
 </main>
 
 
-  <footer>
+  <footer style="display: none">
     <div class="row">
       <div class="col-xs-12 ">
         <span class="glyphicon glyphicon-bell notificacion-item">
@@ -97,10 +112,35 @@
       </div>
     </div>
   </footer>
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 	<!-- Bootstrap Library -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+      $('#quantityItem').change(function(){
+        $('#totalPrice').val($('#quantityItem').val()*90);
+      });
+    /*$('#orderNow').click(function(){
+        window.location.href='payProcessed.html';
+      });
+      $('#toCart').click(function(){
+        window.location.href='buyCart.html';
+      });*/
+     //('#myCarousel').carousel();
+     /*$("#myCarousel").swiperight(function() {
+        $(this).carousel('prev');
+      });
+     $("#myCarousel").swipeleft(function() {
+        $(this).carousel('next');
+     });*/
+    });
+
+</script>
 
   </body>
 </html>

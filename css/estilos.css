@@ -4,19 +4,48 @@
 article{
   border: none;
 }
-
 span{
   font-size: 20px;
+}
+h3, h4{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  color: black;
 }
 
 main{
   max-width: 320px;
-  max-height: 500px;
+  max-height: 560px;
   /*border: 1px solid black;*/
 }
+a span{
+  color:black;
+  text-decoration: none;
+}
+a span:hover{
+  color:black;
+  text-decoration: none;
+}
 
-#body *{
-  border: none;
+
+body {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .5; 
+  z-index: -1;
+  background: url(../images/fondos/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #body {
   position: relative;
@@ -37,13 +66,14 @@ main{
   background-position: center;
 }
 
+
+
 .before_loggin{
   height: 70vh;
 }
 
 .icon-cart{
-  font-size: 25px;  
-  cursor: pointer;
+  font-size: 400;
 }
 .badge-notify{
   background: #e7251e;
@@ -122,7 +152,7 @@ footer{
   height: 120px;
   max-height: 150px;
 
-  background: rgba(0,0,0,.5);
+  background: rgba(19, 24, 74, 0.5);
   opacity: 1;
   transition: background .25s ease-in-out;
   color: #fff;
@@ -169,21 +199,28 @@ footer{
 }
 
 #pay-methods .col-xs-12:hover{
-  background: #999999;
+  /*background: #999999;*/
 }
 
 
 #pay-methods .col-xs-12:nth-child(2){
-  background: #a0bed1;
+  /*background: #a0bed1;*/
 }
 #pay-methods .col-xs-12:nth-child(2):hover{
-  background: #7d97a8;
+  /*background: #7d97a8;*/
 }
 .selected-method{
   position: absolute;
-  right: 5px;
-  font-size: 22px;
-  top: 5px;
+  right: 10px;
+  font-size: 26px;
+  top: 2px;  
+  color: #2fa22f;
+}
+
+#orderNow, #toCart{  
+  font-size: 18px;
+  font-weight: bold;
+
 }
 
 hr{
@@ -206,12 +243,12 @@ h3{
 
 .beer{
   margin: 0 auto;
-  height: 200px;
+  height: 170px;
   cursor: pointer;
 }
 
 .item{
-  height: 280px;
+  height: 250px;
 }
 
 .selectBeer{
@@ -219,19 +256,20 @@ h3{
   width: 80%;
   background-color: #cbb620;
   opacity: 1;
-  border-radius: 15px;
+  
   font-weight: bold;
   font-size: 16px;
   padding: 10px;
   margin-left: 10%;
   color: #ffffff;
   bottom: 5px;
+
 }
 #moreInfo{
    font-size: 30px;
    position: absolute;
-   top: -20px;
-   right: 25px;
+   top: -5px;
+   right: 5px;
    color: black;
    opacity: 1;
    cursor: pointer;
@@ -283,10 +321,6 @@ h3{
    font-size: 20px;
 }
 
-.payMethods{
-  text-align: left;
-}
-
 #chossed-beer .col-xs-12{
   line-height: 30px;
   border-bottom: none;
@@ -306,8 +340,79 @@ h3{
 
 
 
+#list-beer div{
+   background-color: rgba(228, 224, 224, 0.31);   
+
+}
+#list-beer img{
+   height: 12vw;
+}
+#list-beer label{
+   font-size: 18px;
+   color: black;
+}
+#list-beer label:nth-child(2){
+  width: 69vw;
+}
+#list-beer .col-xs-12{
+  line-height: 22px;  
+  border-bottom: 1px solid #848484;
+}
+#list-beer span{
+  position: absolute;
+  right: 15px;
+  font-size: 26px;
+  top: 10px;
+   color: black;
+}
+
+#pay-processed div{
+   text-align: center;
+}
+
+#pay-processed div label{
+  font-size: 22px;
+  color: #0cae0c;
+  text-align: center;
+  width: 100%;
+}
+
+#pay-processed div span{  
+  font-size: 40vw;
+  margin: 0 auto;
+  color: #0cae0c;
+}
+#pay-processed div label:nth-child(2){
+  color: #085408;
+}
+
+#pay-processed div label:nth-child(3){
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  width: 100%;
+}
 
 
+.another-beer{
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  font-size: 22px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#details-beer div{
+  text-align: justify;
+  background-color: rgba(228, 224, 224, 0.31);
+   margin-bottom: 5px;
+}
+
+#details-beer img{
+   height: 40vw;
+   float: left;
+}
 
 
 

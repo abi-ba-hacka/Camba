@@ -23,13 +23,13 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="main.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              <li><a href="chooseBeer.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
               &nbsp;|&nbsp;Inicio</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              &nbsp;|&nbsp;Maestro cervecero</a></li>
+              <!--<li><a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              &nbsp;|&nbsp;Maestro cervecero</a></li>-->
               <li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
               &nbsp;|&nbsp;Lo que me gusta</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+              <li><a href="payMethods.html"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
               &nbsp;|&nbsp;Medios de Pago</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
               &nbsp;|&nbsp;Salir</a></li>
@@ -39,15 +39,14 @@
       </div>
 
       <div class="col-xs-7 no-paddings">
-  <h1>Patagonia's GO</h1>
+  <h1></h1>
       </div>
-
+      
       <div class="col-xs-3 no-paddings col3-menu">
-        <span class="glyphicon glyphicon-shopping-cart icon-cart" onclick="window.location.href='buyCart.html'">
-          <span class="badge badge-notify">2</span>
+        <span class="glyphicon glyphicon-shopping-cart btn btn-default icon-cart" onclick="window.location.href='buyCart.html'">
+          <span class="badge badge-notify" style="display:none">2</span>
         </span>
       </div>
-
     </nav>
   </div>
 
@@ -64,10 +63,10 @@
 
         <div class="row" id="pay-methods" >
 
-          <div class="col-xs-12">
+          <!-- <div class="col-xs-12">
             <img src="images/billete-small.jpg">
             <label>Efectivo</label>
-          </div>
+          </div> -->
 
           <div class="col-xs-12" onclick="window.location.href='creditCard.html';">
             <img src="images/logos_tarjetas-small.png">
@@ -105,7 +104,7 @@
 </main>
 
 
-  <footer>
+  <footer style="display: none">
     <div class="row">
       <div class="col-xs-12 ">
         <span class="glyphicon glyphicon-bell notificacion-item">
